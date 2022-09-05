@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  list-style: none;
 }
 
 body{
@@ -10,6 +11,10 @@ body{
 }
 
 .main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
   min-height: 95vh;
   background-image: url(/assets/pexels-alexander-ermakov-12083872.jpg);
   background-repeat: no-repeat;
@@ -17,7 +22,29 @@ body{
   background-position: 50% 50%;
 }
 
-.main h1{
+.nav-bar{
+  display: flex;
+}
+
+.menu{
+  display: flex;
+  gap: 18px;
+  padding: 16px 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.menu a:hover{
+  color: #756f6f;
+}
+
+/* .main h1{
   text-align: center;
   font-size: 42px;
   padding: 8px;
@@ -26,11 +53,11 @@ body{
   line-height: 52px;
   letter-spacing: 1px;
   margin-top: 14px;
-}
+} */
 
 .main img{
   max-width: 480px;
-  width: 90%;
+  width: 95%;
 }
 
 .section-infos{
@@ -49,6 +76,7 @@ body{
 
 .wrapper-infos h2{
   text-align: center;
+  margin: 24px auto;
 }
 
 .secondline{
@@ -81,7 +109,7 @@ body{
 
 
 .card-infos .fa-solid {
-  color: red;
+  color: #9D0200;
   font-size: 64px;
 }
 
@@ -99,7 +127,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  min-height: 100vh;
+  margin-bottom: 52px;
 }
 
 .servicos h2{
@@ -110,7 +139,7 @@ body{
 
 .wrapper-servicos{
   display: flex;
-  gap: 32px;
+  gap: 18px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -120,17 +149,28 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 380px;
+  width: 320px;
+  min-height: 380px;
   gap: 12px;
   background-color: #fff;
   padding: 24px 12px;
   border-radius: 10%;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transition: all 150ms;
 }
 
+.card-servicos:hover{
+  transform: scale(1.07);
+}
+  
+.card-instalacao{
+  transform: scale(1.07);
+}
+
+
 .card-servicos p {
-  text-align: center;
+  padding: 14px;
+  
 }
 
 .card-servicos .wrapper-ideia{
@@ -146,7 +186,7 @@ body{
 }
 
 .card-servicos .wrapper-mobile{
-  background-color: red;
+  background-color: #9D0200;
   height: 100px;
   width: 100px;
   color: #fff;
@@ -159,12 +199,13 @@ body{
 
 .card-servicos span{
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .sobre-nos{
   display: flex;
   justify-content: center;
-  margin: 52px auto;
+  margin: 0px auto;
   background-color: #fff;
 }
 
@@ -176,15 +217,18 @@ body{
 
 .card-about{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   height: 240px;
   max-width: 380px;
   width: 90%;
-  background-color: red;
+  background-color: #9D0200;
   color: #fff;
-  font-size: 32px;
   padding: 24px;
   margin: 52px 0;
+}
+
+.card-about h2{
+  font-size: 48px;
 }
 
 .wrapper-card-about-text{
@@ -195,13 +239,13 @@ body{
 .card-about-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 240px;
   max-width: 380px;
   width: 90%;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: #fff;
   margin: 52px 0;
+  gap: 6px;
 }
 
 .contato{
@@ -229,7 +273,7 @@ body{
 .form-contact h2{
   margin-bottom: 6px;
   font-size: 32px;
-  color: red;
+  color: #9D0200;
   text-align: center;
   text-transform: capitalize;
 }
@@ -241,7 +285,7 @@ body{
 .form-contact input{
     background: none;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #9D0200;
     height: 48px;
     margin-bottom: 24px;
     padding: 10px 12px;
@@ -252,7 +296,7 @@ body{
 .form-contact textarea{
     background: none;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #9D0200;
     height: 120px;
     margin-bottom: 24px;
     padding: 10px 12px;
@@ -271,7 +315,7 @@ input::placeholder, textarea::placeholder{
     height: 45px;
     font-size: 16px;
     border-style: none;
-    background-color: red;
+    background-color: #9D0200;
     border-radius: 6px;
     color: #fff;
     font-size: 20px;
@@ -279,7 +323,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .btn-send:hover{
-    background-color: #050b5ee5;
+    background-color: red;
     color: #fff;
 }
 
@@ -295,7 +339,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .contato-infos h2{
-  color: red;
+  color: #9D0200;
 }
 
 .contato-card-infos{
