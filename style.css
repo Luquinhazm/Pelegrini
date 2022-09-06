@@ -32,7 +32,7 @@ body{
 .menu{
   display: flex;
   justify-content: center;
-  gap: 18px;
+  
   padding: 16px 0px;
   width: 100%;
 }
@@ -43,6 +43,7 @@ body{
   font-size: 22px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-left: 12px
 }
 
 .menu a:hover{
@@ -102,7 +103,7 @@ body{
 .card-infos{
   max-width: 500px;
   width: 90%;
-  height: 200px;
+  min-height: 200px;
   padding: 16px;
   display: flex;
   gap: 8px;
@@ -458,6 +459,10 @@ input::placeholder, textarea::placeholder{
     margin-top: 8px;
   }
 
+  .card-instalacao{
+    transform: scale(1);
+  }
+
   .main img{
     margin: 0px auto;
   }
@@ -480,6 +485,7 @@ input::placeholder, textarea::placeholder{
   }
   .card-about-text{
     margin-bottom: 0;
+    margin-top: 32px;
   }
   .main h1{
     font-size: 32px;
@@ -497,5 +503,6 @@ input::placeholder, textarea::placeholder{
   .menu{
     overflow-x: scroll;
     padding: 4px;
+    justify-content: flex-start;
   }
 }
