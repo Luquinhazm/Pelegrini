@@ -27,7 +27,6 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: aqua;
 }
 
 .menu{
@@ -35,9 +34,7 @@ body{
   justify-content: center;
   gap: 18px;
   padding: 16px 0px;
-  overflow-x: scroll;
   width: 100%;
-  background-color: rgb(136, 255, 0);
 }
 
 .menu a {
@@ -486,5 +483,9 @@ input::placeholder, textarea::placeholder{
 @media (max-width:425px){
   .main {
     min-height: fit-content;
+  }
+
+  .menu{
+    overflow-x: scroll;
   }
 }
