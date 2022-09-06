@@ -263,15 +263,14 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 4px;
 }
 
 .form-contact{
     display: flex;
     flex-direction: column;
     max-width: 570px;
-    width: 50%;
-    padding: 30px;
+    padding: 16px;
     background-color: #fff;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -340,7 +339,7 @@ input::placeholder, textarea::placeholder{
   justify-content: center;
   align-items: center;
   color: #fff;
-  width: 50%;
+  
   gap: 16px;
   margin: 16px 0;
 }
@@ -351,7 +350,6 @@ input::placeholder, textarea::placeholder{
 
 .contato-card-infos{
   width: 320px;
-  text-align: center;
 }
 
 .section-footer{
