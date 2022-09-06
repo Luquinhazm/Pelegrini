@@ -362,10 +362,16 @@ input::placeholder, textarea::placeholder{
     color: rgba(255, 255, 255, 0.486);
 }
 
+.wrapper-logo-footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .infos-footer{
     display: flex;
     width: 90%;
-    justify-content: space-between;
+    
     align-items: center;
     margin: 12px auto;
     gap: 12px;
