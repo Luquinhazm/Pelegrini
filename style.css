@@ -496,5 +496,6 @@ input::placeholder, textarea::placeholder{
 
   .menu{
     overflow-x: scroll;
+    padding: 4px;
   }
 }
