@@ -365,13 +365,12 @@ input::placeholder, textarea::placeholder{
 .wrapper-logo-footer{
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .infos-footer{
     display: flex;
     width: 90%;
-    
+   
     align-items: center;
     margin: 12px auto;
     gap: 12px;
@@ -391,10 +390,12 @@ input::placeholder, textarea::placeholder{
 
 .address{
     width: 200px;
+    min-height: 140px;
 }
 
 .contact-footer{
     width: 200px;
+    min-height: 140px;
 }
 
 .contact-footer a{
@@ -484,6 +485,9 @@ input::placeholder, textarea::placeholder{
   }
   .main h1{
     font-size: 32px;
+  }
+  .wrapper-logo-footer{
+    width: 100%;
   }
 }
 
