@@ -24,12 +24,20 @@ body{
 
 .nav-bar{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: aqua;
 }
 
 .menu{
   display: flex;
+  justify-content: center;
   gap: 18px;
   padding: 16px 0px;
+  overflow-x: scroll;
+  width: 100%;
+  background-color: rgb(136, 255, 0);
 }
 
 .menu a {
@@ -170,6 +178,7 @@ body{
 
 .card-servicos p {
   padding: 14px;
+  text-align: justify;
   
 }
 
