@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: #f2f2f2;
 }
@@ -272,6 +276,7 @@ body{
     flex-direction: column;
     max-width: 570px;
     padding: 16px;
+    width: 90%;
     background-color: #fff;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -340,7 +345,7 @@ input::placeholder, textarea::placeholder{
   justify-content: center;
   align-items: center;
   color: #fff;
-  
+  width: 30%;
   gap: 16px;
   margin: 16px 0;
 }
@@ -369,7 +374,7 @@ input::placeholder, textarea::placeholder{
 .infos-footer{
     display: flex;
     width: 90%;
-   
+   justify-content: center;
     align-items: center;
     margin: 12px auto;
     gap: 12px;
@@ -503,6 +508,10 @@ input::placeholder, textarea::placeholder{
   .menu{
     overflow-x: scroll;
     padding: 4px;
+    justify-content: flex-start;
+  }
+
+  .infos-footer{
     justify-content: flex-start;
   }
 }
