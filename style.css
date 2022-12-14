@@ -12,6 +12,8 @@ html{
 
 body{
   background-color: #f2f2f2;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .main{
@@ -165,7 +167,7 @@ body{
   gap: 12px;
   background-color: #fff;
   padding: 24px 12px;
-  border-radius: 10%;
+  border-radius: 8px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   transition: all 150ms;
 }
@@ -181,8 +183,6 @@ body{
 
 .card-servicos p {
   padding: 14px;
-  text-align: justify;
-  
 }
 
 .card-servicos .wrapper-ideia{
@@ -230,7 +230,7 @@ body{
 .card-about{
   display: flex;
   flex-direction: column;
-  height: 240px;
+  height: 300px;
   max-width: 380px;
   width: 90%;
   background-color: #9D0200;
@@ -245,7 +245,7 @@ body{
 
 .wrapper-card-about-text{
   display: flex;
-
+  align-items: center;
 }
 
 .card-about-text{
@@ -260,13 +260,89 @@ body{
   gap: 6px;
 }
 
+.faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.faq h1{
+  font-size: 32px;
+}
+
+.wrapperPergunta{
+  width: 800px;
+  position: relative;
+}
+
+.pergunta, .pergunta2, .pergunta3{
+  padding: 8px 4px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid #9D0200;
+  transition: 0.3s ease;
+}
+
+.pergunta p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#btnSaibaMais, #btnSaibaMais2, #btnSaibaMais3{
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.fa-plus{
+  font-size: 26px;
+  transition: 0.5s all;
+}
+
+#resposta1, #resposta2, #resposta3{
+  position: absolute;
+  top: 50px;
+  color: #fff;
+  z-index: 99;
+  display: none;
+  animation: aparecer 0.3s ease-in;
+  padding: 8px;
+}
+
+
+
+
+@keyframes aparecer{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.5;
+  }
+  100%{
+      opacity: 1;
+      
+  }
+}
+
+
 .contato{
   background-image: url(/assets/pexels-photo-9392381.jpeg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10%;
   flex-wrap: wrap;
   padding: 4px;
 }
@@ -274,7 +350,7 @@ body{
 .form-contact{
     display: flex;
     flex-direction: column;
-    max-width: 570px;
+    max-width: 520px;
     padding: 16px;
     width: 90%;
     background-color: #fff;
