@@ -266,7 +266,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 4px;
 }
@@ -301,7 +301,6 @@ body{
     height: 48px;
     margin-bottom: 24px;
     padding: 10px 12px;
-    color: #fff;
     font-size: 14px;
 }
 
@@ -312,7 +311,6 @@ body{
     height: 120px;
     margin-bottom: 24px;
     padding: 10px 12px;
-    color: #fff;
     font-size: 14px;
 }
 
@@ -374,10 +372,10 @@ input::placeholder, textarea::placeholder{
 .infos-footer{
     display: flex;
     width: 90%;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     margin: 12px auto;
-    gap: 12px;
+    gap: 8%;
     flex-wrap: wrap;
 }
 
@@ -412,24 +410,11 @@ input::placeholder, textarea::placeholder{
 
 .cnpj{
     color: rgba(255, 255, 255, 0.486);
-    /* margin-right: 50px;
-    margin-bottom: 25px; */
+    
     text-align: center;
     margin: 16px auto;
 }
 
-/* .socials-media{
-    display: flex;
-    flex-direction: column;
-    font-size: 28px;
-    margin-left: 54px;
-    gap: 5px;
-    cursor: pointer;
-} */
-
-/* .fa-instagram:hover, .fa-facebook-square:hover, .fa-linkedin:hover{
-    color: #fff;
-} */
 
 .logo-footer{
     height: 240px;
