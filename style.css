@@ -218,6 +218,80 @@ body{
   text-transform: uppercase;
 }
 
+.section-TrabalhoFeito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.wrapper-TrabalhoFeito{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-trabalhoFeito{
+  display: flex;
+  max-width: 840px;
+  width: 840px;
+  height: 220px;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 24px;
+  border-radius: 6px;
+}
+
+.logo-cliente{
+  height: 150px;
+}
+.logo-cliente-if{
+  height: 150px;
+  margin-right: 24px;
+}
+
+.descricao-trabalho, .descricao-trabalho-if{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 75%;
+  height: 100%;
+}
+
+.descricao-trabalho-if{
+  width: 85%;
+  text-align: right;
+}
+.descricao-trabalho{
+  width: 85%;
+  text-align: left;
+}
+
+.descricao-trabalho h3, .descricao-trabalho-if h3{
+  font-size: 22px;
+  width: 100%;
+}
+
+.descricao-trabalho-if h3{
+  text-align: right;
+}
+
+.descricao-trabalho button, .descricao-trabalho-if button{
+  bottom: 4px;
+  right: 50px;
+  border: none;
+  background-color: #9D0200;
+  color: #fff;
+  padding: 6px;
+  cursor: pointer;
+}
+
 .sobre-nos{
   display: flex;
   justify-content: center;
@@ -304,8 +378,6 @@ body{
   align-items: center;
   position: relative;
 }
-
-
 
 .fa-plus{
   font-size: 26px;
