@@ -227,7 +227,7 @@ body{
 
 .card-trabalhoFeito{
   display: flex;
-  max-width: 1024px;
+  max-width: 1120px;
   width: 90%;
   height: 260px;
   gap: 18px;
@@ -252,7 +252,6 @@ body{
   position: relative;
   flex-direction: column;
   justify-content: center;
-  
   gap: 4px;
   width: 75%;
   height: 100%;
@@ -304,25 +303,26 @@ body{
   display: flex;
   justify-content: center;
   margin: 0px auto;
-  background-color: #fff;
+ 
 }
 
 .wrapper-about{
   display: flex;
   justify-content: center;
-  padding: 12px;
+  /* padding: 12px; */
+  max-width: 1120px;
+  width: 90%;
 }
 
 .card-about{
   display: flex;
   flex-direction: column;
-  height: 300px;
-  max-width: 380px;
+  max-width: 360px;
   width: 90%;
   background-color: #9D0200;
   color: #fff;
   padding: 24px;
-  margin: 52px 0;
+  /* margin: 16px 0; */
 }
 
 .card-about h2{
@@ -340,10 +340,11 @@ body{
   min-height: 240px;
   max-width: 380px;
   width: 90%;
-  padding: 0px 20px;
+  padding: 8px 12px;
   background-color: #fff;
-  margin: 52px 0;
+  /* margin: 16px 0; */
   gap: 6px;
+  font-size: 16px;
 }
 
 .faq{
