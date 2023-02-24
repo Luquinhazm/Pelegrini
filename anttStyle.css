@@ -5,6 +5,8 @@
   width: 100%;
 }
 
+
+
 .menu {
   display: flex;
   justify-content: center;
@@ -54,35 +56,51 @@ hgroup h2 {
   max-width: 880px;
 }
 
-.examplesPhotos{
+.examplesPhotos {
   display: flex;
   max-width: 880px;
   width: 90%;
   justify-content: center;
   gap: 28px;
-  margin: 18px 0px; 
+  margin: 18px 0px;
 }
 
-.fotoEsquerda{
-  background-color: aqua;
+.fotoEsquerda {
+  
   height: 384px;
   width: 260px;
 }
 
-.fotosPaisagens{
+.fotoEsquerda img{
+  height: 384px;
+}
+
+.fotosPaisagens {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.First-Line{
+.fotosPaisagens img{
+  height: 180px;
+  width: 420px;
+}
+
+.First-Line {
   background-color: chartreuse;
   height: 180px;
   width: 420px;
 }
 
-.Second-Line{
+.Second-Line {
   background-color: chartreuse;
   height: 180px;
   width: 420px;
+}
+
+.linkContato{
+  background-color: brown;
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
 }

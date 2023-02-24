@@ -9,6 +9,11 @@
   *:focus{
     outline: none;
   }
+
+  a{
+    text-decoration: none;
+    color: #e9e9e7;
+  }
   
   html{
     scroll-behavior: smooth;
